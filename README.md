@@ -128,3 +128,7 @@ Shows the average transaction value of each customer, meaning the average amount
 While this code is quite simple, managers can use this in a variety of ways. Taking a sample set of a few months and using it as a barometer for the following months can allow managers to see if there are fluctuations in the amount that customers usually spend. If significant fluctuations occur during certain parts of the year, managers can conclude that their product/service may have a seasonality component to it. If suddenly consumers start spending less, there may be new competition that has entered the market that the manager may be unaware of. If consumers are buying a lot of product, but there’s a disconnect with the transaction value, the product simply may not be priced high enough
 
 ## Database Information:
+
+<img width="900" alt="Screenshot 2025-03-13 at 3 37 57 PM" src="https://github.com/user-attachments/assets/a40065e9-4fc9-4906-a58f-c560c4a51eca" />
+
+Name of the Database - ha_group7_crn61608
