@@ -7,11 +7,13 @@
 ## Team Name:
 - 61608 Group 7
 ## Team Members:
-- Chandler Allmond @chandlerallmond 
-- Nick Barton @nicholasbarton1 
-- Manav Kamdar 
-- Vincent Sengaphone @Sengaphone 
-- Landon Wilson @landonnn0 
+
+- Allmond, Chandler [@Chandler Allmond](https://github.com/chandlerallmond)
+- Barton, Nick [@Nick Barton](https://github.com/nicholasbarton1)
+- Manav Kamdar [@Manav Kamdar] (https://github.com/manavk2004)
+- Sengaphone, Vincent [@Vincent Sengaphone](https://github.com/sengaphone)
+- Wilson, Landon [@Landon Wilson](https://github.com/landonnn0)
+
 ## Problem Description:
 
 Retail technology businesses, such as Best Buy, face challenges in efficiently managing inventory, sales transactions, and product categorization. Without an organized database system, these businesses may encounter difficulties such as:
@@ -55,51 +57,43 @@ By integrating inventory, sales, and employee management, this database provides
 
 ## Queries:
 1. Low Stock & High Stock Alert
- 
+This query identifies products with low stock levels and high stock levels to help businesses manage inventory efficiently. The low stock alert retrieves products with a stock quantity of 30 or less, ensuring that managers restock them before they run out. The high stock alert retrieves products with a stock quantity greater than 50, helping managers avoid excessive inventory that could lead to high storage costs or markdowns. Both queries order the results in ascending order of stock quantity for better visibility.
  <img width="900" alt="Screenshot 2025-03-13 at 12 28 22 PM" src="https://github.com/user-attachments/assets/9825fb50-3228-4f51-ac76-0a7f42b22c4a" />
-  
+Managers can use this query to maintain balanced stock levels by ensuring that fast-selling products are restocked in time while preventing overstocking of slow-moving items. This helps businesses reduce waste, improve cash flow, and optimize inventory space, leading to better profitability and operational efficiency.
 2. Best Selling Products
-
+This query retrieves the top 5 best-selling products based on the total quantity sold. The results are sorted in descending order by sales volume.
 <img width="900" alt="Screenshot 2025-03-13 at 12 30 11 PM" src="https://github.com/user-attachments/assets/a70d252a-a1b5-4138-991b-bebf90b33eee" />
-
-  
+Managers can identify high-demand products, allowing them to prioritize restocking and promotional efforts.
 3. Total Revenue By Product Category
-
-<img width="561" alt="Screenshot 2025-03-13 at 12 30 38 PM" src="https://github.com/user-attachments/assets/d045201d-817f-4fdd-a6b8-92f809db1f5d" />
-
-   
+This query calculates the total sales revenue for each product category while filtering out categories that generate less than the average revenue of all categories. It first groups transactions by product category to compute total revenue and then applies a HAVING clause to retain only those categories that exceed the average revenue. A subquery is used to determine the overall average category revenue, ensuring that the analysis focuses on high-performing product categories.
+<img width="900" alt="Screenshot 2025-03-13 at 12 49 01 PM" src="https://github.com/user-attachments/assets/346ad81c-0651-4170-bef2-df8ba2ae3542" />
+Managers can use this query to identify high-performing product categories that generate above-average revenue. By filtering out lower-performing categories, businesses can allocate more resources to profitable categories, optimize inventory planning, and adjust marketing strategies for better financial outcomes.
 4. Top 3 Most Profitable Brands
-
+If a store wanted to maximize revenue by stocking the brands from which consumers were purchasing most from, this code would be beneficial to visualize which brands sat at the top of the revenue chart.
 <img width="900" alt="Screenshot 2025-03-13 at 12 30 55 PM" src="https://github.com/user-attachments/assets/85e5a732-629e-4bcb-be0c-ebb76f3cb26f" />
-
-   
+The code joins the sales transaction, sales transaction for products, electronic product, and brand name tables then groups it by brand name then order by total revenue. Then we set the limit to 3 in order to show only the top 3 brands by revenue.
 5. Employee Preformance
-
+Shows each of the employee’s sales performance and gives basic information including their name and employee id
 <img width="900" alt="Screenshot 2025-03-13 at 12 31 13 PM" src="https://github.com/user-attachments/assets/34a14eab-c2d0-4500-8977-781249cee2f1" />
-
-   
+Managers can use this to gauge whether employees are meeting the standards that the company has set for itself. Having a clear and concise table showing the level of performance each employee brings into the company can allow managers to pinpoint those who may need extra assistance, and give the proper guidance for success. Comparing the performance of each employee overtime can allow the managers to make logical decisions to keep employees, fire employees, give bonuses, etc.
 6. Monthly Sales Trends
-
+This query displays the year, month, and total sales revenue for each month. The results are grouped by month and sorted in descending order to show the most recent months first.
 <img width="900" alt="Screenshot 2025-03-13 at 12 31 41 PM" src="https://github.com/user-attachments/assets/0e9249d5-c9d2-4f36-8515-767167509958" />
-
-    
+Managers can use this query to analyze sales trends over time, identifying seasonal patterns and peak sales months. This insight helps businesses make data-driven decisions about inventory management, pricing strategies, and marketing campaigns to maximize revenue.
 7. Total Sales Transactions
-
+This query retrieves the total number of transactions in the system.
 <img width="900" alt="Screenshot 2025-03-13 at 12 31 59 PM" src="https://github.com/user-attachments/assets/a6e407a2-d051-4a28-8ffc-964a32515420" />
-
-    
+Gives managers a quick snapshot of overall sales activity.
 8. List of All Employees
-
+Retrieves basic employee details, sorted alphabetically by last name.
 <img width="900" alt="Screenshot 2025-03-13 at 12 32 18 PM" src="https://github.com/user-attachments/assets/731cd665-8777-4b40-ac30-a1f78fe89ddc" />
-
-    
+Provides a quick reference for employee records.
 9. Most Used Payment Method
-
+Finds the most frequently used payment methods.
 <img width="900" alt="Screenshot 2025-03-13 at 12 32 46 PM" src="https://github.com/user-attachments/assets/e814dd2b-a3da-416e-9576-644b6c67af11" />
-
-    
+Helps managers analyze customer payment preferences.
 10. Average TransactionValue
-
+Shows the average transaction value of each customer, meaning the average amount that a customer will spend.
 <img width="900" alt="Screenshot 2025-03-13 at 12 33 05 PM" src="https://github.com/user-attachments/assets/b70ac001-0352-436d-95d7-8c7f9afd8c25" />
-
+While this code is quite simple, managers can use this in a variety of ways. Taking a sample set of a few months and using it as a barometer for the following months can allow managers to see if there are fluctuations in the amount that customers usually spend. If significant fluctuations occur during certain parts of the year, managers can conclude that their product/service may have a seasonality component to it. If suddenly consumers start spending less, there may be new competition that has entered the market that the manager may be unaware of. If consumers are buying a lot of product, but there’s a disconnect with the transaction value, the product simply may not be priced high enough
 ## Database Information:
