@@ -10,7 +10,7 @@
 
 - Allmond, Chandler [@Chandler Allmond](https://github.com/chandlerallmond)
 - Barton, Nick [@Nick Barton](https://github.com/nicholasbarton1)
-- Manav Kamdar [@Manav Kamdar] (https://github.com/manavk2004)
+- Manav Kamdar [@Manav Kamdar](https://github.com/manavk2004)
 - Sengaphone, Vincent [@Vincent Sengaphone](https://github.com/sengaphone)
 - Wilson, Landon [@Landon Wilson](https://github.com/landonnn0)
 
